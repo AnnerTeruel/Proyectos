@@ -1,0 +1,150 @@
+/* =====================================================================
+ * SISTEMA DE GESTIÓN DE INVENTARIO - TEMA PREMIUM (DARK & GLASS EXPERIENCIE)
+ * ===================================================================== 
+ */
+
+.root {
+    /* Tipografía moderna y fondo con gradiente elegante (Dark Mode) */
+    -fx-font-family: 'Segoe UI', 'Inter', 'Roboto', sans-serif;
+    -fx-background-color: linear-gradient(to bottom right, #0f172a, #1e293b);
+    -fx-font-size: 14px;
+}
+
+/* ==========================================
+ * CONTENEDORES (Efecto Glassmorphism / Cristal)
+ * ========================================== */
+.panel-glass {
+    -fx-background-color: rgba(30, 41, 59, 0.75);
+    -fx-background-radius: 16px;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-radius: 16px;
+    -fx-border-width: 1.5px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 20, 0.2, 0, 10);
+}
+
+/* ==========================================
+ * TÍTULOS Y TEXTOS
+ * ========================================== */
+.titulo-principal {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f8fafc;
+    -fx-effect: dropshadow(gaussian, rgba(56, 189, 248, 0.3), 5, 0.5, 0, 0);
+}
+
+.subtitulo {
+    -fx-font-size: 16px;
+    -fx-text-fill: #94a3b8;
+}
+
+/* ==========================================
+ * CAMPOS DE TEXTO (TextField / PasswordField)
+ * ========================================== */
+.text-field, .password-field {
+    -fx-background-color: rgba(15, 23, 42, 0.6);
+    -fx-background-radius: 8px;
+    -fx-border-color: rgba(148, 163, 184, 0.3);
+    -fx-border-radius: 8px;
+    -fx-border-width: 1px;
+    -fx-text-fill: #f1f5f9;
+    -fx-prompt-text-fill: #64748b;
+    -fx-padding: 10px 14px;
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #38bdf8;
+    -fx-background-color: rgba(15, 23, 42, 0.9);
+    -fx-effect: dropshadow(gaussian, rgba(56, 189, 248, 0.4), 8, 0.3, 0, 0);
+}
+
+/* ==========================================
+ * BOTONES PREMIUM (Fluidos y Dinámicos)
+ * ========================================== */
+.btn-primary {
+    -fx-background-color: linear-gradient(to right, #0284c7, #38bdf8);
+    -fx-background-radius: 8px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 24px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(2, 132, 199, 0.5), 10, 0.2, 0, 4);
+}
+
+.btn-primary:hover {
+    -fx-background-color: linear-gradient(to right, #0369a1, #0284c7);
+}
+
+.btn-primary:pressed {
+    -fx-background-color: #0c4a6e;
+    -fx-translate-y: 2px;
+    -fx-effect: dropshadow(gaussian, rgba(2, 132, 199, 0.3), 5, 0.1, 0, 2);
+}
+
+.btn-danger {
+    -fx-background-color: linear-gradient(to right, #e11d48, #f43f5e);
+    -fx-background-radius: 8px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(225, 29, 72, 0.5), 10, 0.2, 0, 4);
+}
+
+.btn-danger:hover {
+    -fx-background-color: linear-gradient(to right, #be123c, #e11d48);
+}
+
+/* ==========================================
+ * TABLAS DE DATOS (TableView)
+ * ========================================== */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-radius: 8px;
+    -fx-padding: 2px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: rgba(15, 23, 42, 0.8);
+    -fx-background-radius: 8px 8px 0 0;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-size: 40px;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #38bdf8;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell {
+    -fx-background-color: rgba(30, 41, 59, 0.5);
+    -fx-border-color: transparent transparent rgba(255, 255, 255, 0.05) transparent;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: rgba(15, 23, 42, 0.3);
+}
+
+.table-row-cell:selected {
+    -fx-background-color: rgba(56, 189, 248, 0.2);
+    -fx-text-background-color: #ffffff;
+}
+
+/* ==========================================
+ * SCROLLBAR
+ * ========================================== */
+.scroll-bar:vertical, .scroll-bar:horizontal {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: rgba(148, 163, 184, 0.3);
+    -fx-background-radius: 10px;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: rgba(148, 163, 184, 0.6);
+}
