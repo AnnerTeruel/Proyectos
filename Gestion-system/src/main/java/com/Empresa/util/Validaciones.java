@@ -1,4 +1,4 @@
-package main.java.com.Empresa.util;
+package com.Empresa.util;
 
 public class Validaciones {
 }

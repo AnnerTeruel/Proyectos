@@ -1,4 +1,4 @@
-package main.java.com.Empresa.view;
+package com.Empresa.view;
 
 public class Dashboard {
 }

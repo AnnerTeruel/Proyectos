@@ -1,4 +1,4 @@
-package main.java.com.Empresa.controller;
+package com.Empresa.controller;
 
 public class VentaController {
 }
